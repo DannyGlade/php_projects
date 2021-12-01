@@ -1,0 +1,226 @@
+@charset "utf-8";
+#my{
+    zoom: 125%;
+}
+html{
+    height: 100%;
+}
+body{
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+h1,h2,h3{
+    text-align: center;
+	font-family:"Bahnschrift SemiBold";
+}
+.p{
+    text-align: center;
+	font-family:"Bahnschrift SemiBold";
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/* Navigation Bar CSS */
+.tpnvBG{
+    background-image: url(Photos/BG.jpg);
+    min-height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 3px solid;
+}
+.Topnav{
+    margin: 20px;
+    width: auto;
+    display: fixed;
+}
+.topnav{
+    text-align: left;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.topnav .srch > input{
+    text-align: right;
+    float: right;
+    padding: 5px;
+    border: 2px solid black;
+    font-family: "Bahnschrift SemiBold";
+    height: 1.5em;
+    width: 300px;
+}
+.topnav .alink > a{
+    color: white;
+    font-family: "Bahnschrift SemiBold";
+    background: rgb(49, 49, 49);
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
+    display: inline-block;
+    height: auto;
+}
+.topnav .alink > a:hover{
+    background: rgb(102, 102, 102);
+}
+.topnav .alink > a.active{
+    background-color: white;
+    color: black;
+}
+.Topnav > h1{
+    font-size: 60px;
+}
+/*Grid Css Strats Here*/
+.list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-bottom:  100px;
+    min-height: 100%;
+}
+.card{
+    border: 3px solid white;
+    margin: 1em;
+    width:fit-content;
+}
+.card > img{
+    border-bottom: 1.5px solid white;
+    height: 200px;
+    width: auto;
+}
+.card  button,button{
+    background: white;
+    padding: 10px;
+    border: 2px solid white;
+    width: 200px;
+    font-family: "Bahnschrift SemiBold";
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.card button:hover,button:hover{
+    background: gray;
+    color: white;
+    border: 2px solid black;
+}
+.label1,label{
+    font-family:"Bahnschrift";
+}
+.price{
+    font-family: "Bahnschrift Light";
+}
+/*Footer CSS starts here*/
+.Footer{
+    min-height: 100%;
+    width: 100%;
+}
+.Footer .footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding-top: 50px;
+    height: 200px;
+    width: 100%;
+    background-color:black;
+    text-align: center;
+    word-spacing: 5px;
+}
+.footer > a{
+    text-decoration: none;
+    color: white;
+    font-family: "Bahnschrift SemiBold";
+    padding-top: 50px;
+}
+/*MidB*/
+.midB{
+    min-height: 100%;
+}
+/*Custom CBox*/
+.filter{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+}
+.box{
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    position: relative;
+    background: rgb(49, 49, 49);
+}
+.cbox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content:center;
+}
+.cbox > input{
+    visibility: hidden;
+}
+.cbox > label{
+    cursor: pointer;
+    margin-left: 0.5em;
+}
+.cbox > .box::after{
+    opacity: 0;
+    content: '';
+    width: 10px;
+    height: 5px;
+    top: 2px;
+    left: 1.5px;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+.cbox:hover .box::after{
+    opacity: 0.5;
+}
+.cbox > input:checked ~ .box::after{
+    opacity: 1;
+}
+/*textarea*/
+textarea{
+    text-align: left;
+    padding: 5px;
+    border: 2px solid black;
+    font-family: "Bahnschrift SemiBold";
+}
+/*Picture List*/
+.Plist{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-bottom: 50px;
+    min-height: 100%;
+}
+.Pcard{
+    margin: 0.3em;
+    width: max-content;
+}
+.Pcard img{
+    border: 3px solid white;
+    height: 200px;
+}
+/* Login page CSS */
+.lglist{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-bottom:  100px;
+    min-height: 100%;
+}
+.lgcard{
+    border: 3px solid white;
+    margin: 1em;
+    width:fit-content;
+}
+.lglist .lgcard .lginput{
+    text-align: right;
+    float: right;
+    padding: 5px;
+    border: 2px solid black;
+    font-family: "Bahnschrift SemiBold";
+    height: 1.5em;
+    width: 300px;
+}
