@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DG-Estates</title>
+        <style>
+            @import url(RECss.css);
+        </style>
+    </head>
+    <body>
+        <div class="tpnvBG">
+            <div class="Topnav">
+                <h1>DG-Estates</h1><br><br>
+                <div class="topnav">
+                    <div class="alink">
+                        <a href="ans8.html" class="active">Home</a>
+                        <a href="conus.html">Contact Us</a>
+                        <a href="abouus.html">About</a>
+                    </div>
+                    <div class="srch">
+                        <input type="text" placeholder="Search..">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="midB">
+        <h1>Available Properties</h1>
+        <div class="filter">
+            <div class="cbox">
+                <input type="checkbox" name="Resi" id="Resi" rel="Resi" onclick="filter();">
+                <span class="box"></span>
+                <label for="Resi" class="label1">Residential</label>
+            </div>
+            <div class="cbox">
+                <input type="checkbox" name="Comm" id="Comm" rel="Comm" onchange="filter();">
+                <span class="box"></span>
+                <label for="Comm" class="label1">Commercial</label>
+            </div>
+            <div class="cbox">
+                <input type="checkbox" name="Bung" id="Bung" rel="Bung" onchange="filter();">
+                <span class="box"></span>
+                <label for="Bung" class="label1">Bunglow</label>
+            </div>
+            <div class="cbox">
+                <input type="checkbox" name="Land" id="Land" rel="Land" onchange="filter();">
+                <span class="box"></span>
+                <label for="Land" class="label1">Land</label>
+            </div>
+        </div>
+        <br>
+        <div class="list">
+            <div class="card" id="resi" rel="Resi">
+                <img src="Photos\Residential.jpg" alt="No img Found">
+                <h2>DG-Homes</h2>
+                <p class="price">₹ 50 Lakh/-</p>
+                <p class="label1">Luxurious Homes For Luxurious People.</p>
+                <p><a href="dghomes.html"><button>View</button></a></p>
+            </div>
+
+            <div class="card" id="bung" rel="Bung">
+                <img src="Photos\Bunglaw.jpg" alt="No img Found">
+                <h2>Modern Bunglows</h2>
+                <p class="price">₹ 5 Crore/-</p>
+                <p class="label1">Modern Bunglows For Modern People.</p>
+                <p><a href="modernbung.html"><button>View</button></a></p>
+            </div>
+
+            <div class="card" id="bung" rel="Bung">
+                <img src="Photos\Bunglow2.jpg" alt="No img Found">
+                <h2>Old Bunglows</h2>
+                <p class="price">₹ 1 Crore/-</p>
+                <p class="label1">Old Bunglows For Retro Lovers.</p>
+                <p><button>View</button></p>
+            </div>
+
+            <div class="card" id="comm" rel="Comm">
+                <img src="Photos\Commercial.jpg" alt="No img Found">
+                <h2>Commercial Shops</h2>
+                <p class="price">₹ 45 Lakh/-</p>
+                <p class="label1">Perfect Shops For Your Perfect Buziness.</p>
+                <p><button>View</button></p>
+            </div>
+
+            <div class="card" id="land" rel="Land">
+                <img src="Photos\land.jpg" alt="No img Found">
+                <h2>Land</h2>
+                <p class="price">₹ 25 Lakh/-</p>
+                <p class="label1">Land for anything you Desire.</p>
+                <p><button>View</button></p>
+            </div>
+
+        </div>
+        </div>
+        <div class="Footer">
+            <div class="footer">
+                <a href="ans8.html">Home</a>
+                <a href="conus.html">Contact-Us</a>
+                <a href="abouus.html">About</a>
+            </div>
+        </div>
+    </body>
+</html>
